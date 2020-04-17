@@ -19,7 +19,7 @@ sub <- subset(hhpc1, Date=="2007-02-01" | Date=="2007-02-02")
 
 
 # Third plot
-png("plot3.png")
+png("plot3.png", width = 480, height = 480, units = "px")
 plot(sub$DateTime, sub$Sub_metering_1, type='n', xlab="", ylab="Energy sub metering")
 lines(sub$DateTime, sub$Sub_metering_1)
 lines(sub$DateTime, sub$Sub_metering_2, col="red")

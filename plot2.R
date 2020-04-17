@@ -18,7 +18,7 @@ sapply(hhpc1, class)
 sub <- subset(hhpc1, Date=="2007-02-01" | Date=="2007-02-02")
 
 # Second plot
-png("plot2.png")
+png("plot2.png", width = 480, height = 480, units = "px")
 plot(sub$DateTime, sub$Global_active_power, type="n", xlab="", ylab= "Global Active Power (kilowatts)")
 lines(sub$DateTime, sub$Global_active_power)
 dev.off()

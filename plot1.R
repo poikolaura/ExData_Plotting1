@@ -18,6 +18,6 @@ sapply(hhpc1, class)
 sub <- subset(hhpc1, Date=="2007-02-01" | Date=="2007-02-02")
 
 # First plot
-png("plot1.png")
+png("plot1.png", width = 480, height = 480, units = "px")
 hist(sub$Global_active_power, col="red", xlab="Global Active Power (kilowatts)", ylab="Frequency", main = "Global Active Power")
 dev.off()
